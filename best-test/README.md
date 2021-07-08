@@ -1,14 +1,3 @@
-# learn-cli
-
-前端自动化-脚手架学习之路
-
-## 脚手架-创建项目
-
-- 标准模板创建
-- 自定义规则创建
-- 创建组件库
-- 自动安装和启动
-
 ### 原生开发脚手架-简单入门(best-test)
 
 目录 /best-test
@@ -62,50 +51,11 @@ if (command && (command.startsWith('--') || command.startsWith('-'))) {
 console.log('best-test');
 ```
 
-### 发布到 npm
+### 发布 npm
+
+### 全局安装执行
 
 ```javascript
-// 获取当前npm包镜像地址
-npm get registry
-
-// 设置回官方地址
-npm config set registry https://registry.npmjs.org/
-
-// 设置淘宝镜像地址
-npm config set registry http://registry.npm.taobao.org/
-
-// 登录
-npm login
-
-// 发布包
-npm publish
-
-// 发布私有域的包
-npm publish --access=public
-
-// 24小时内可撤销包；删除已在 npm 发布的同名包，需要在24小时后才能重新发布
-npm unpublish --force
+npm install -g @leslie0403/best-test
+best-test
 ```
-
-### 脚手架本地调试
-
-```javascript
-// 源npm包安装到本地;在工具库根目录执行
-yarn link
-// 在npm目录下卸载
-yarn unlink
-
-// 在项目中使用 npm 包
-yarn link "@leslie0403/best-test"
-// 在项目中卸载 npm 包
-yarn unlink "@leslie0403/best-test"
-```
-
-### 脚手架框架搭建（lerna-best）
-
-## 脚手架-发布项目
-
-- Git 自动化
-- 云构建
-- 项目自动发布
-- 组件自动发布
