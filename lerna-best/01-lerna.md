@@ -40,7 +40,7 @@ create-react-app、babel、vue-cli 都使用它管理项目
 
 - lerna exec 执行 shell 脚本
 - lerna run 执行 npm 命令
-- lerna clear 清空依赖
+- lerna clean 清空依赖
 - lerna bootstrap 重装依赖
 
 ##### 脚手架发布上线
