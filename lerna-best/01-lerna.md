@@ -48,4 +48,4 @@ create-react-app、babel、vue-cli 都使用它管理项目
 - lerna version 、bump version
 - lerna changed 查看上版本以来所有的变更
 - lerna diff 查看 diff
-- lerna publish 项目发布
+- lerna publish 项目发布；发布失败后 可执行`lerna publish from-git`
