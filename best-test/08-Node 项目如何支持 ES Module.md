@@ -77,7 +77,7 @@ module: {
 
 ```javascript
 // node 14版本之前
-node --experimental bin/index.mjs
+node --experimental-modules bin/index.mjs
 
 // node 14版本之后
 node bin/index.mjs
