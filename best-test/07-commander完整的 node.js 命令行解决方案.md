@@ -1,7 +1,16 @@
+# 完整的 node.js 命令行解决方案([commander.js](https://github.com/tj/commander.js/blob/HEAD/Readme_zh-CN.md#%e9%80%89%e9%a1%b9))
+
+```javascript
+// 安装
+yarn add -D commander
+```
+
+### 实例
+
+```javascript
 #!/usr/bin/env node
 
 const commander = require('commander');
-const pkg = require('../package.json');
 
 // 获取commader的单例
 // const { program } = commander;
@@ -9,6 +18,12 @@ const pkg = require('../package.json');
 // 实例化一个Command实例
 const program = new commander.Command();
 
+program.parse(process.argv); // 放在文件最后执行
+```
+
+### 全局配置
+
+```javascript
 program
   .name(Object.keys(pkg.bin)[0])
   .usage('<command> [options]')
@@ -16,7 +31,13 @@ program
   .option('-d, --debug', '是否开启调试模式', false)
   .option('-e, --env <envName>', '获取环境变量的名称');
 // console.log(program.opts()); // best-test -e 123
+```
 
+### 注册命令
+
+方法一：
+
+```javascript
 // command api 注册命令 <> 必选 [] 可选
 /**
  * best-test clone aaa bbb --force / best-test clone --force aaa bbb => do clone aaa bbb true
@@ -29,7 +50,11 @@ clone
   .action((source, destination, cmdObj) => {
     console.log('do clone', source, destination, cmdObj.force);
   });
+```
 
+方法二：
+
+```javascript
 // addCommand 注册子命令
 // best-test service start 8888 => do service start 8888
 const service = new commander.Command('service');
@@ -48,33 +73,18 @@ service
     console.log('stop service');
   });
 program.addCommand(service);
+```
 
-// best-test install init => best-cli init
-program
-  .command('install [name]', 'install package', {
-    executableFile: 'best-cli',
-    // isDefault: true,
-    // hidden: true,
-  })
-  .alias('i');
+### 高级定制
 
-// program
-//   .arguments('<cmd> [options]')
-//   .description('test command', {
-//     cmd: 'command to run',
-//     options: 'options for command',
-//   })
-//   .action((cmd, options) => {
-//     console.log(cmd, options);
-//   });
-
+```javascript
 // 高级定制1：自定义help信息
-// program.helpInformation = function () {
-//   return '';
-// };
-// program.on('--help', function () {
-//   console.log('your help information');
-// });
+program.helpInformation = function () {
+  return '';
+};
+program.on('--help', function () {
+  console.log('your help information');
+});
 
 // 高级定制2:实现debug模式
 program.on('option:debug', function () {
@@ -90,5 +100,4 @@ program.on('command:*', function (obj) {
   const availableCommmands = program.commands.map((cmd) => cmd.name());
   console.log('可用命令:', availableCommmands.join(','));
 });
-
-program.parse(process.argv);
+```

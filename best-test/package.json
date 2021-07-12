@@ -8,6 +8,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "commander": "^8.0.0",
     "dedent": "^0.7.0",
     "yargs": "^17.0.1"
   }
