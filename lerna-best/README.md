@@ -1,5 +1,17 @@
 # 基于 lerna 搭建脚手架框架
 
+### Lerna 学习文档
+
+- [Lerna 简介](https://github.com/luozyiii/learn-cli/blob/main/lerna-best/01-lerna.md)
+
+- [import-local 源码解析](https://github.com/luozyiii/learn-cli/blob/main/lerna-best/03-import-local%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.md)
+
+- [优秀的文件操作库](https://github.com/luozyiii/learn-cli/blob/main/lerna-best/04-%E4%BC%98%E7%A7%80%E7%9A%84%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%BA%93.md)
+
+- [Node 模块加载原理](https://github.com/luozyiii/learn-cli/blob/main/lerna-best/05-Node%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD.md)
+
+- [基于 lerna 重新设计简历](https://github.com/luozyiii/learn-cli/blob/main/lerna-best/06-%E5%9F%BA%E4%BA%8Elerna%E9%87%8D%E6%96%B0%E8%AE%BE%E8%AE%A1%E7%AE%80%E5%8E%86.md)
+
 ### 常用命令
 
 ```javascript
