@@ -57,6 +57,9 @@ lerna changed
 lerna diff
 // 项目发布 后，git会打包生成tag
 lerna publish
+
+// 发布失败后 可执行
+lerna publish from-git
 ```
 
 #### 发布注意事项：
