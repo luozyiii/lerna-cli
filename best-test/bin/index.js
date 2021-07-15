@@ -2,4 +2,6 @@
 
 // require('../dist/core');
 
-require('./process/index');
+// require('./process/index');
+
+require('./inquirer');
