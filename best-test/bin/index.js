@@ -4,4 +4,6 @@
 
 // require('./process/index');
 
-require('./inquirer');
+// require('./inquirer');
+
+require('./inquirer/readline.js');
