@@ -2,6 +2,8 @@
 
 ## readline 的使用方法和实现原理
 
+![命令交互实现原理](../assets/images/命令交互实现原理.png)
+
 ### 使用
 
 ```javascript
@@ -111,3 +113,9 @@ range(1, 200)
 ```
 
 ## 手写命令行交互式列表组件
+
+![命令行交互架构图](../assets/images/命令行交互架构图.png)
+
+```javascript
+// list.js;
+```
