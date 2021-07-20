@@ -16,7 +16,13 @@
 
 - [Node 项目如何支持 ES Module](https://github.com/luozyiii/learn-cli/blob/main/best-test/08-Node%20%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E6%94%AF%E6%8C%81%20ES%20Module.md)
 
-- [Node 多进程开发入门]()
+- [Node 多进程开发入门](https://github.com/luozyiii/learn-cli/blob/main/best-test/09-Node%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8.md)
+
+- [Node 多进程开发进阶](https://github.com/luozyiii/learn-cli/blob/main/best-test/10-Node%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6.md)
+
+- [inquirer 基本用法和常用属性入门](https://github.com/luozyiii/learn-cli/blob/main/best-test/11-inquirer%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E5%92%8C%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E5%85%A5%E9%97%A8.md)
+
+- [inquirer 命令行交互原理](https://github.com/luozyiii/learn-cli/blob/main/best-test/12-inquirer%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BA%A4%E4%BA%92%E5%8E%9F%E7%90%86.md)
 
 ### 原生开发脚手架-简单入门(best-test)
 
